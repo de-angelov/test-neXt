@@ -1,17 +1,15 @@
 import { getServerRandom } from "./action"
 
-export const revalidate = 10;
-
 const Page = async () => {
-
+   "use client";
     const random = await getServerRandom();
 
-    return <div>
-       will recalculate every 10 sec:  math Random: {random}
+    return <div style={{ border: '2px solid blue'}}>
+
+        <br />
+         this is client side math Random: {random}
     </div>
 }
 
 
 export default Page;
-
-

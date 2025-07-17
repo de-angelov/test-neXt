@@ -1,10 +1,16 @@
 import { ReactNode } from "react";
 
-const Layout = async ({ randompart, children  }: { randompart: ReactNode, children: ReactNode }) => {
+const Layout = async ({ useCache, client,  forceDynamic, children  }: { forceDynamic:ReactNode, client:ReactNode, useCache: ReactNode, children: ReactNode }) => {
     return <div style={{ border: '3px solid green', padding: '10px' }} >
         <h2>Layout</h2> 
         <br/>
-       {randompart}
+       {useCache}
+        <br/>
+        <br/>
+       {client}
+        <br/>
+        {forceDynamic}
+        <br/>
         <br/>
        {children}
     </div>

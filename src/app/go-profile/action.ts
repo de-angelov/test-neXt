@@ -23,35 +23,9 @@ const redirectTo  = async ( _state: { error: string }, formdata: FormData) => {
        return { error: 'invalid arguments ' };
     }
 
-    redirect(`/userprofile/${finalFirst+finalSecond}`)
+    redirect(`/userprofile/${finalFirst+finalSecond}/dynamic`)
 }
 
 
 export { redirectTo };
 
-
-// "use server"
-
-// import { redirect } from "next/navigation";
-
-// const multiply  = async (formdata: FormData) => {
-//     const first = formdata.get('number1');
-//     const second = formdata.get('number');
-
-//     console.log('first', first);
-//     console.log('second', second);
-
-
-//     if(typeof first !== 'number' || typeof second !== "number") {
-//         return { success: false, message: 'Need to be numbers' };
-//     }
-
-//     const result = first * second;
-
-//     await new Promise((resolve) => setTimeout(resolve, 1000));
-
-//     return { success: true, message: result };
-// }
-
-
-// export { multiply };

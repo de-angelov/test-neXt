@@ -4,15 +4,6 @@ import { PageProps } from "../page";
 
 export const dynamic = 'force-dynamic'
 
-// type Props = {
-//   params: { id: string };
-// };
-
-// Type error: Type 'Props' does not satisfy the constraint 'PageProps'.
-//   Types of property 'params' are incompatible.
-
-
-    // const id = parseInt(params.id, 10);
 export default async function Page({ params }: PageProps) {
     const { id } = await params;
 
@@ -26,7 +17,8 @@ export default async function Page({ params }: PageProps) {
   return (
     <div>
       <h1>Dynamic Page (App Router)</h1>
-      <pre>{JSON.stringify({ test: 'string '}, null, 2)}</pre>
+      works only on top of generated static routes 0-10
+      <pre>Params: {JSON.stringify({ id }, null, 2)}</pre>
     </div>
   );
 }
