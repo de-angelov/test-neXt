@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "npm run build && next start",
     "lint": "next lint",
-    "test:e2e": "start-server-and-test start http://localhost:3000 'playwright test'"
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "next": "15.3.5",

@@ -3,8 +3,7 @@ import { test, expect } from '@playwright/test';
 test('home page has correct title', async ({ page }) => {
   await page.goto('http://localhost:3000/');
 
-  // Expect the title to contain something specific to your app
-  await expect(page).toHaveTitle(/Your App Title|Home/i); // <-- customize this
+  await expect(page).toHaveTitle(/My Home/i); 
 });
 
 // test('navigates to get started or similar page', async ({ page }) => {
