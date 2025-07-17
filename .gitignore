@@ -42,3 +42,9 @@ storybook-static/
 
 # Optional: Turborepo cache (if using monorepo)
 turbo/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

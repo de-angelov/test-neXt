@@ -1,0 +1,25 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+   "name": "TypeScript example",
+   "dockerComposeFile": [
+      "docker-compose.yml"
+   ],
+   // The name of the following service has to match one of the services in docker-compose.yml
+   "service": "typescript-dev",
+   "workspaceFolder": "/work",
+   "customizations": {
+      "vscode": {
+         "extensions": [
+            "dbaeumer.vscode-eslint",
+            "editorconfig.editorconfig",
+            "maattdd.gitless",
+            "usernamehw.errorlens",
+            "tal7aouy.rainbow-bracket",
+            "evondev.indent-rainbow-palettes"
+         ]
+      }
+   },
+   "shutdownAction": "stopCompose",
+   "remoteUser": "root",
+   "forwardPorts": [9323, 3000]
+}
