@@ -1,14 +1,10 @@
 "use client"
 import { redirectTo } from "./action";
-
 import Form from 'next/form';
 import { FormSubmit } from "./form-submit";
 import { useActionState } from "react";
 
  const GoProfile = () => {
-
-    // needed 
-
     const [state, formAction ] = useActionState(redirectTo, { error: '' }, );
 
 

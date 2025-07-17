@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Header } from "@jobber/components/Header";
+import { Nav } from "@jobber/components/Header";
 import { HeaderOnClient } from "@jobber/components/HeaderOnClient";
 
 const geistSans = Geist({
@@ -32,7 +32,7 @@ export default function RootLayout({
         style={{ padding: '20px' }}
       >
         <h1 style={{ border: '1px solid green', display: 'flex',  padding: '10px' }}>LAYOUT HEADER</h1>
-        <Header />
+        <Nav />
         <HeaderOnClient />
         {children}
       </body>
