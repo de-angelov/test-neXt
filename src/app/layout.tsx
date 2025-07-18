@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         style={{ padding: '20px' }}
       >
-        <h1 style={{ border: '1px solid green', display: 'flex',  padding: '10px' }}>LAYOUT HEADER</h1>
+        <h1 style={{ outline: '1px solid green', display: 'flex',  padding: '10px' }}>LAYOUT HEADER</h1>
         <Nav />
         <HeaderOnClient />
         {children}
