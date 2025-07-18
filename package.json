@@ -7,9 +7,12 @@
     "build": "next build",
     "start": "npm run build && next start",
     "lint": "next lint",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "db:gen": "npx drizzle-kit generate",
+    "db:mig": "npx drizzle-kit migrate"
   },
   "dependencies": {
+    "drizzle-orm": "^0.44.3",
     "next": "15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -18,9 +21,12 @@
     "@eslint/eslintrc": "^3",
     "@playwright/test": "^1.54.1",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20.19.8",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "better-sqlite3": "^12.2.0",
+    "drizzle-kit": "^0.31.4",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
     "tailwindcss": "^4",

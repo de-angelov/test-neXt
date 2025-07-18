@@ -1,0 +1,1 @@
+CREATE INDEX `organizationId_idx` ON `users` (`organization_id`,`name`);
