@@ -22,3 +22,8 @@ export const organizations = table(
         about: t.text(),
     }
 )
+
+export const schema = {
+  users,
+  organizations,
+};
