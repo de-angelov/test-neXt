@@ -8,11 +8,13 @@ const Users = async () => {
             <h3>USERS in DB:</h3>
             <br />
             {
-                users.map(u => 
-                    <>
-                        <div className="p-5 border border-emerald-400">UserName: { u.name } UserOrganization: { u.organizationName }</div>
-                        <br />
-                    </>
+                users.map((u,i) => 
+                <div key={`${u.name} ${i}`}>
+                    <div className="p-5 border border-emerald-400">
+                        UserName: { u.name } UserOrganization: { u.organizationName }
+                    </div>
+                    <br />
+                </ div>
                 )
             }
 

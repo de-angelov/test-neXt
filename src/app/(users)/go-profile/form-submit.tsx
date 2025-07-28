@@ -11,7 +11,7 @@ const FormSubmit = () => {
 
 
     return (
-        <button className="p-1 justify-self-end bg-emerald-200 border-2 border-emerald-700" type="submit" > Submit </button>
+        <button className="p-1 shadow-lg shadow-emerald-500/20 justify-self-end bg-emerald-100 border-2 rounded-md border-emerald-700" type="submit" > Submit </button>
     )
 
 };
