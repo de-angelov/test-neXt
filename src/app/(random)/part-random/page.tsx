@@ -1,6 +1,6 @@
 
 const Page = async () => {
-    return <div style={{ border: '1px solid red'}}>
+    return <div className="border-2 border-dashed border-gray-500 p-4">
       from  Page.tsx
     </div>
 }

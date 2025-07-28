@@ -1,12 +1,14 @@
 'use cache'
 
+import { ReadyContainer } from "@jobber/components/ready-container";
+
 const Page = async () => {
     const random = Math.random();
     
     
-    return <div>
-        math Random: {random}
-    </div>
+    return <ReadyContainer>
+       use cache: math Random: {random}
+    </ReadyContainer>
 }
 
 export default Page;

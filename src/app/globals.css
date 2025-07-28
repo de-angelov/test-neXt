@@ -5,6 +5,13 @@
   --foreground: #171717;
 }
 
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 16px #FFEDD5;
+  }
+}
+
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

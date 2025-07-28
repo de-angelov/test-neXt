@@ -31,8 +31,8 @@ Thumbs.db
 export/
 
 # Optional: ignore IDE configs
-.vscode/
-.idea/
+# .vscode/
+# .idea/
 
 # Optional: testing coverage
 coverage/

@@ -10,7 +10,7 @@ const Users = async () => {
             {
                 users.map(u => 
                     <>
-                        <div style={{ border: '1px solid red', padding: '5px',  }}>UserName: { u.name } UserOrganization: { u.organizationName }</div>
+                        <div className="p-5 border border-emerald-400">UserName: { u.name } UserOrganization: { u.organizationName }</div>
                         <br />
                     </>
                 )

@@ -9,7 +9,7 @@ import { useActionState } from "react";
 
 
     return (
-        <Form action={formAction}> 
+        <Form action={formAction} className="flex gap-1.5 flex-col"> 
 
         {
             `
@@ -24,18 +24,17 @@ import { useActionState } from "react";
         <br />
 
         <span> Go to userProfile id = sum of the numbers</span>
-        
-        <br />
-        
-        <input style={{border: '1px solid red'}} type="number" name="number1" />
-        
-        <br />
+        <div className="flex gap-1 drop-shadow-md drop-shadow-black bg-white p-2 my-4">
+            <br />
+            <input className="border" type="number" name="number1" />
+            <br />
+            <input className="border" type="number" name="number2" />
+            <br />      
+             <FormSubmit />
+        </div>
 
-        <input style={{border: '1px solid red'}} type="number" name="number2" />
-        
-        <br />
 
-        <FormSubmit />
+ 
     </Form>
     );
 };

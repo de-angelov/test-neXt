@@ -1,3 +1,4 @@
+import { ReadyContainer } from "@jobber/components/ready-container";
 
 export const dynamic = 'force-dynamic'
 
@@ -8,9 +9,9 @@ const Page = async () => {
     await new Promise((r) => setTimeout(r, 10_000));
     
     
-    return <div>
-        math Random: {random}
-    </div>
+    return <ReadyContainer>
+        force-dynamic: math Random: {random}
+    </ReadyContainer>
 }
 
 export default Page;

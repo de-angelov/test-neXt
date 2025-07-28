@@ -1,8 +1,12 @@
 "use client"
 import { useFetchState } from "@jobber/hooks.ts/use-fetch-state";
 import { useEffect } from "react";
+import { LoadingContainer } from "./loading-container";
 
-const style = { padding: '40px',  backgroundColor: 'salmon' , display: 'flex', height: '100px', width: '100%'};
+const tw = {
+  base: 'relative p-5 bg-sky-300 flex w-full drop-shadow-md drop-shadow-gray-500',
+  bold: "font-black",
+};
 
 export const HeaderOnClient = () => {
       const {loading, error, data } = useFetchState({ initVal: '', url: '/api/random-string'})
@@ -11,15 +15,15 @@ export const HeaderOnClient = () => {
       useEffect(() => console.log('browser state', data));
 
       if(loading){
-        return <div style={style}>LOADING FETCH FROM BROWSER...</div>
+        return <LoadingContainer>RUNNING FETCH FROM BROWSER.. </LoadingContainer>
       }
 
       if(error){
-        return <div style={style}>ERROR oops...: {error}</div>
+        return <div className={tw.base}>ERROR oops...: {error}</div>
       }
 
 
-      return <div style={{ padding: '40px',  backgroundColor: 'salmon' , display: 'flex', height: '100px', width: '100%'}}> 
-         This is client component showing random server string: {`"${data}"`}
+      return <div className={tw.base}> 
+         This is client component showing random server string: <div className={tw.bold}>{`"${data}"`}</div>
     </div>;
 };

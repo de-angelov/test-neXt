@@ -11,7 +11,7 @@ const FormSubmit = () => {
 
 
     return (
-        <button style={{border: '1px solid red'}} type="submit" > Submit </button>
+        <button className="p-1 justify-self-end bg-emerald-200 border-2 border-emerald-700" type="submit" > Submit </button>
     )
 
 };

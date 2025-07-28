@@ -1,4 +1,6 @@
+import { LoadingContainer } from "@jobber/components/loading-container";
+
 const loader = () => {
-    return <div>PART running Async Server Action  to get Random Number..</div>
+    return <LoadingContainer>PART running Async Server Action  to get Random Number..</LoadingContainer>
 }
 export default loader;

@@ -1,4 +1,6 @@
+import { LoadingContainer } from "@jobber/components/loading-container";
+
 const loader = () => {
-    return <div>Thinking About A Random Number..</div>
+    return <LoadingContainer>Thinking About A Random Number..</LoadingContainer>
 }
 export default loader;
