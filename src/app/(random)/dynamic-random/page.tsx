@@ -5,7 +5,7 @@ const Page = async () => {
     const random = Math.random();
 
       // simulate async call
-    await new Promise((r) => setTimeout(r, 10000));
+    await new Promise((r) => setTimeout(r, 10_000));
     
     
     return <div>

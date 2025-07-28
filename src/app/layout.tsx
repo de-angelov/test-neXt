@@ -4,6 +4,8 @@ import "./globals.css";
 import { Nav } from "@jobber/components/header-on-server";
 import { HeaderOnClient } from "@jobber/components/header-on-client";
 
+import type { ReactNode } from "react";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   
   return (

@@ -16,8 +16,8 @@ const redirectTo  = async ( _state: { error: string }, formdata: FormData) => {
     }
 
     await new Promise((r) => setTimeout(r, 500));
-    const finalFirst = parseInt(first);
-    const finalSecond = parseInt(second);
+    const finalFirst = Number.parseInt(first);
+    const finalSecond = Number.parseInt(second);
 
     if(typeof finalFirst !== 'number' || typeof finalSecond !== 'number') {
        return { error: 'invalid arguments ' };
