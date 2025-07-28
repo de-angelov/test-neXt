@@ -27,9 +27,12 @@
     "@types/react-dom": "^19",
     "better-sqlite3": "^12.2.0",
     "drizzle-kit": "^0.31.4",
-    "eslint": "^9",
+    "eslint": "^9.32.0",
     "eslint-config-next": "15.3.5",
+    "eslint-plugin-drizzle": "^0.2.3",
+    "eslint-plugin-unicorn": "^60.0.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "typescript-eslint": "^8.38.0"
   }
 }

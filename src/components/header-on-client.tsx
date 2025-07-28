@@ -1,5 +1,5 @@
 "use client"
-import { useFetchState } from "@jobber/hooks.ts/useFetchState";
+import { useFetchState } from "@jobber/hooks.ts/use-fetch-state";
 import { useEffect } from "react";
 
 const style = { padding: '40px',  backgroundColor: 'salmon' , display: 'flex', height: '100px', width: '100%'};
@@ -7,6 +7,7 @@ const style = { padding: '40px',  backgroundColor: 'salmon' , display: 'flex', h
 export const HeaderOnClient = () => {
       const {loading, error, data } = useFetchState({ initVal: '', url: '/api/random-string'})
     
+      // eslint-disable-next-line no-console
       useEffect(() => console.log('browser state', data));
 
       if(loading){

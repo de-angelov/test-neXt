@@ -18,8 +18,8 @@ export const useFetchState = <T,>({ url, initVal }: {url: string, initVal: T }) 
         }
         const json = await response.json();
         setData(json.data);
-      } catch (err: unknown ) {
-        setError((err as unknown as  Error).message);
+      } catch (error_: unknown ) {
+        setError((error_ as unknown as  Error).message);
       } finally {
         setLoading(false);
       }

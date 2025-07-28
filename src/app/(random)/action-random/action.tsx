@@ -5,7 +5,7 @@ export const getServerRandom = async () => {
 
    const random = Math.random();
 
-    await delay(10000);
+    await delay(10_000);
 
     return random;
 }
